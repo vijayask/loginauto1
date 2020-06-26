@@ -1,4 +1,4 @@
-from lotr.pyproj.pomp.lloottss.lotus import Locators
+from pomproject.locators.locators import Locators
 class LoginPage():
 
     def __init__(self,driver):
