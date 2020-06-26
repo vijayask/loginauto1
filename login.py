@@ -22,7 +22,7 @@ class LoginTest(unittest.TestCase):
         print("Test Completed")
         
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:/Users/VIJAYA/PycharmProjects/seleniump/lotr/pyproj/pomp/lloottss/reports'))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:/Users/VIJAYA/PycharmProjects/seleniump/pomproject/reports'))
 
 
 
