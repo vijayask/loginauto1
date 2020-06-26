@@ -16,6 +16,8 @@ driver.find_element_by_id("id_username").send_keys("admin")
 driver.find_element_by_id("id_password").send_keys("!3$y$+eMs")
 
 driver.find_element_by_class_name("btn").click()
+driver.find_element_by_id("logoutCaret").click()
+
 
 driver.find_element_by_partial_link_text("Logout").click()
 time.sleep(2)
