@@ -1,6 +1,7 @@
 from selenium import webdriver
 import time
 import unittest
+import HtmlTestRunner
 class LoginTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -17,6 +18,12 @@ class LoginTest(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.driver.close(cls)
+        cls.driver.quit()
+        print("Test Completed")
+        
+if __name__ == '__main__':
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:/Users/VIJAYA/PycharmProjects/seleniump/lotr/pyproj/pomp/lloottss/reports'))
+
 
 
 
