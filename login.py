@@ -16,6 +16,10 @@ class LoginTest(unittest.TestCase):
         self.driver.find_element_by_class_name("btn").click()
         time.sleep(2)
     @classmethod
+    def test_logout_valid(self):
+        self.driver.find_element_by_id("logoutCaret").click()
+        self.driver.find_element_by_link_text("Logout").click()    
+    @classmethod
     def tearDownClass(cls):
         cls.driver.close(cls)
         cls.driver.quit()
